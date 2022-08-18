@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    text-decoration: none;
+}
+
+.part {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill,minmax(25vw, 31vw));
+}
+
+.lesson {
+    width: 25vw;
+    border: 1px solid rgba(78,80,151,1);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.lesson__image {
+    width: 75px;
+    height: 75px;
+}
+
+.lesson:nth-child(1) > .lesson__image {
+    background-image: url(../assets/png/img1.png);
+    background-size: contain;
+}
+
+.lesson:nth-child(2) > .lesson__image {
+    background-image: url(../assets/png/img2.png);
+    background-size: contain;
+ }
+
+ .lesson:nth-child(3) > .lesson__image {
+    background-image: url(../assets/png/img3.png);
+    background-size: contain;
+}
+
+.lesson:nth-child(4) > .lesson__image {
+    background-image: url(../assets/png/img4.png);
+    background-size: contain;
+ }
+ 
+ .lesson:nth-child(5) > .lesson__image {
+    background-image: url(../assets/png/img5.png);
+    background-size: contain;
+}
+
+.lesson:nth-child(6) > .lesson__image {
+    background-image: url(../assets/png/img6.png);
+    background-size: contain;
+ }
+
+ .lesson:nth-child(7) > .lesson__image {
+    background-image: url(../assets/png/img7.png);
+    background-size: contain;
+}
+
+.lesson__button {
+    min-height: 42px;
+    background-color: rgba(78,80,151,1);
+    color: white;
+}
+
+.lesson__link:visited {
+    color: antiquewhite;
+    transition: 0.2s;
+}
