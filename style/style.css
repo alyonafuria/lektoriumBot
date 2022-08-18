@@ -7,17 +7,16 @@
 .part {
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(auto-fill,minmax(25vw, 31vw));
+    grid-template-columns: repeat(auto-fill,minmax(33vw, 48vw));
 }
 
 .lesson {
-    width: 25vw;
     border: 1px solid rgba(78,80,151,1);
     border-radius: 5px;
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
@@ -64,8 +63,14 @@
 }
 
 .lesson__button {
+    position: relative;
+    bottom: 5px;
     min-height: 42px;
     background-color: rgba(78,80,151,1);
+    color: white;
+}
+
+.lesson__link {
     color: white;
 }
 
