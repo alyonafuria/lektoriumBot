@@ -2,18 +2,25 @@
 
 * {
     text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://static.tildacdn.com/tild3463-6161-4766-b637-363830353030/fon-res.jpg);
+    background-size: contain;
 }
 
 .part {
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(auto-fill,minmax(33vw, 48vw));
+    width: 100%;
+    gap: 2vw;
+    grid-template-columns: repeat(auto-fill, minmax(40vw, 48vw));
 }
 
 .lesson {
-    border: 1px solid rgba(78,80,151,1);
     border-radius: 5px;
     padding: 10px;
+    background-color: rgba(250, 247, 235, 0.9);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -68,13 +75,10 @@
     min-height: 42px;
     background-color: rgba(78,80,151,1);
     color: white;
+    border: 1px solid rgba(78,80,151,1);
+    border-radius: 5px;
 }
 
 .lesson__link {
     color: white;
-}
-
-.lesson__link:visited {
-    color: antiquewhite;
-    transition: 0.2s;
 }
